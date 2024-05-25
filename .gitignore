@@ -21,6 +21,7 @@ mono_crash.*
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
+[Oo]utput
 x64/
 x86/
 [Ww][Ii][Nn]32/
@@ -71,6 +72,7 @@ StyleCopReport.xml
 # Files built by Visual Studio
 *_i.c
 *_p.c
+*_i.h
 *_h.h
 *.ilk
 *.meta
@@ -131,6 +133,9 @@ $tf/
 _ReSharper*/
 *.[Rr]e[Ss]harper
 *.DotSettings.user
+
+# JustCode is a .NET coding add-in
+.JustCode
 
 # TeamCity is a build add-in
 _TeamCity*
@@ -238,6 +243,7 @@ ClientBin/
 *.jfm
 *.pfx
 *.publishsettings
+node_modules/
 orleans.codegen.cs
 
 # Including strong name files can present a security risk
@@ -319,6 +325,13 @@ paket-files/
 
 # FAKE - F# Make
 .fake/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# CodeRush
+.cr/
 
 # CodeRush personal settings
 .cr/personal

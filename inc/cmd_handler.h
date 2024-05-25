@@ -5,16 +5,20 @@
  * @date    25/05/2024
  */
 
-#ifndef CMDHANDLER_H
-#define CMDHANDLER_H
+#ifndef CMD_HANDLER_H
+#define CMD_HANDLER_H
 /******************************** Included files ******************************/
 #include <stdlib.h>
+#include <string>
 /********************************** Definition ********************************/
+#define CMD_BUFF_SIZE   (10u)   //FIXME: Change CMD_BUFF_SIZE
+
 namespace Console {
+    using std::string;
 /***************************** Class declaration ******************************/
     class CmdHandler {
     private:
-
+        string cbuffer[CMD_BUFF_SIZE]{};
     public:
 /** @brief Constructor */
         CmdHandler() = default;
@@ -41,4 +45,4 @@ namespace Console {
     };
 }
 /******************************************************************************/
-#endif /* !CMDHANDLER_H */
+#endif /* !CMD_HANDLER_H */

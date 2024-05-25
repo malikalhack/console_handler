@@ -115,11 +115,12 @@
     <IntDir>$(ProjectDir)output\obj\$(Platform)_$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemGroup>
-    <ClCompile Include="src\CmdHandler.cpp" />
+    <ClCompile Include="src\cmd_handler.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="inc\CmdHandler.h" />
+    <ClInclude Include="inc\cmd_handler.h" />
+    <ClInclude Include="inc\commands.h" />
   </ItemGroup>
   <ItemDefinitionGroup />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
